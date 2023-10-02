@@ -3,23 +3,14 @@
 
 import logo from '../imgs/logo.jpeg'
 import home from '../imgs/home.jpg'
-import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 
 const Index = () => {
     return (
         <div>
-
-
-            <div className="header">
-                <a href="home.html"><img src={logo} alt="Home" className="home-icon" /></a>
-                <div className="header-nav">
-                    <Link to={'/about-us'}>About</Link>
-                    <a href="contactUs.html">Contact Us</a>
-                    <a href="signUp.html">Sign Up</a>
-                    <a href="login.html">Login</a>
-                </div>
-            </div>
+<Navbar />
             <div className="content-container">
                 <h1>DATA SCIENCE</h1>
                 <h2>MASTER OF SCIENCE DEGREE PROGRAM</h2>
@@ -102,46 +93,7 @@ const Index = () => {
                     will be a keen interest in learning the powerful ways in which data can be applied in various fields.
                 </p>
             </div>
-            {/* Footer code */}
-            <div className="footer-container">
-                {/* Column 1: Logo */}
-                <div className="footer-column-logo">
-                    <img src={logo} alt="Logo" className="footer-logo" />
-                </div>
-                {/* Column 2: Links */}
-                <div className="footer-column">
-                    <a href="home.html">Home</a>
-                    <a href="aboutUs.html">About</a>
-                    <a href="contactUs.html">Contact Us</a>
-                    <a href="signUp.html">Sign Up</a>
-                    <a href="login.html">Login</a>
-                </div>
-                {/* Column 3: Links */}
-                <div className="footer-column">
-                    <a href="#">Accesibility Information</a>
-                    <a href="#">Copyrignt notice</a>
-                    <a href="#">T &amp; Cs</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Report Issues</a>
-                </div>
-                {/* Column 4: Newsletter */}
-                <div className="footer-column">
-                    <p>Get Your Newsletter</p>
-                    <div className="newsletter-container">
-                        <input type="email" placeholder="Enter your email" />
-                        <button>Subscribe</button>
-                    </div>
-                    <div className="social-icons">
-                        <a href="#" className="fa fa-facebook" />
-                        <a href="#" className="fa fa-twitter" />
-                        <a href="#" className="fa fa-linkedin" />
-                        <a href="#" className="fa fa-instagram" />
-                    </div>
-                </div>
-            </div>
-            <div className="fixed-footer">
-                @ 2023 SKILLIFY, INC
-            </div>
+<Footer/>
         </div>
     )
 }

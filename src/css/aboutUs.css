@@ -10,15 +10,15 @@ Project Group Members: Vaibhavi Arjunwadkar (1001826818)
                        
 */
 
-body {
+.container {
     font-family: Arial, sans-serif;
     background-color: #291749;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 97vh; */
-    height: 40%;
+    /* height: 40%; */
     margin-top: 20px;
+    height: 100vh;
 }
 
 .header {

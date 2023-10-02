@@ -1,18 +1,13 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import '../css/aboutUs.css'
 
 const About = () => {
   return (
-    <div>
-
-    <div className="header">
-      <a href="home.html"><img src="../images/logo.jpeg" alt="Home" className="home-icon" /></a>
-      <div className="header-nav">
-        <a href="contactUs.html">Contact Us</a>
-        <a href="signUp.html">Sign Up</a>
-        <a href="login.html">Login</a>
-      </div>
-    </div>
-    <div className="content-container">
+    <>
+<Navbar/>
+<div className='container'>
+<div className="content-container ">
       <h1>About Us</h1>
       <h4>MISSION</h4>
       <p>
@@ -61,11 +56,13 @@ const About = () => {
         partnerships and collaborative efforts that increase the Skillify’s impact on society.
       </p>
     </div>
+</div>
+
     {/* Footer code */}
     <div className="fixed-footer">
       @ 2023 SKILLIFY, INC
     </div>
-  </div>
+  </>
   )
 }
 
