@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import '../css/login.css'
 
@@ -28,7 +29,7 @@ Project Group Members: Vaibhavi Arjunwadkar (1001826818)
       </form>
       <br />
       <div className="forgot-password">
-        <a href="#">Forgot my password</a>
+        <Link to={'/forgort-password'}>Forgot my Password</Link>
       </div>
     </div>
     {/* Footer code */}

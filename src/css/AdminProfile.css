@@ -13,7 +13,7 @@ Project Group Members: Vaibhavi Arjunwadkar (1001826818)
 * {
     margin: 0;
     padding: 0;
-    width: auto;
+    box-sizing: border-box;
 }
 
 body {
