@@ -3,6 +3,7 @@
 
 import logo from '../imgs/logo.jpeg'
 import home from '../imgs/home.jpg'
+import { Link } from 'react-router-dom'
 
 
 const Index = () => {
@@ -13,7 +14,7 @@ const Index = () => {
             <div className="header">
                 <a href="home.html"><img src={logo} alt="Home" className="home-icon" /></a>
                 <div className="header-nav">
-                    <a href="aboutUs.html">About</a>
+                    <Link to={'/about-us'}>About</Link>
                     <a href="contactUs.html">Contact Us</a>
                     <a href="signUp.html">Sign Up</a>
                     <a href="login.html">Login</a>
